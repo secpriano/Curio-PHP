@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .container{
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .flex{
+        display: flex;
+    }
+
+    .flex-center{
+        justify-content: center;
+    }
+
+    .flex-around{
+        justify-content: space-around;
+    }
+
+    .flex-between{
+        justify-content: space-between;
+    }
+
+
+.heading{
+ color: white;
+ background-color: red ;
+ padding-top: 40px;
+ padding-bottom: 40px;
+}
+.heading .eigenwijs{
+    margin-right: 15px;
+}
+
+h2.special{
+    margin-top: 20px;
+    color: blue;
+}
+
+.detail-text{
+    margin-left: 40px;
+    
+}
+.lower-detail .qr-text{
+    margin-left: 40px;
+    margin-top: 40px;
+    
+}
+
+h2{
+    display: block;
+}
+
+.details{
+    margin-top: 20px;
+}
+
+.details h2{
+    margin: 10px 0px;
+}
+.content{
+    justify-content: center;
+    margin-left: 100px;
+}
+
+</style>
+
+<body>
+    <div class="container">
+        <div class="heading flex flex-center">
+            <div class="ticket">
+                <h2 class="eigenwijs">ticket bevestiging</h2>
+            </div>
+            <div class="amo">
+                <h2>AMO-bioscoop</h2>
+            </div>
+        </div>
+
+        <div class="film flex flex-center   ">
+            <h2 class="special">insert film here</h2>
+        </div>
+
+        <div class="details flex">
+            <div class="img">
+                <img src="https://placehold.it/150x250" alt="insert img here">
+            </div>
+            <div class="detail-text ">
+                <h2 class="special">insert day and date here</h2>
+                <h2 class="special">insert time-start/time-end here</h2>
+                <h2 class="special">insert cinema-name/location here</h2>
+                <h2 class="special">insert zaal here</h2>
+                <h2 class="special">insert row and seats here</h2>
+                <hr>
+                <h3>korting...</h3>
+                <h3>totaal prijs: </h3>         
+            </div>
+        </div>
+        <section class="content flex">
+            <h3>Een zeer klein percentage personen kan een aanval krijgen<br>
+                 bij blootstelling aan bepaalde visuele beelden,<br>
+             zoals lichtflitsen of patronen die in films kunnen voorkomen.<br>
+             </h3>
+        </section>
+        <div class="lower-detail flex">
+            <div class="qr-code">
+                <img src="https://placehold.it/150x150" alt="kibbeling">
+            </div>
+            <div class="qr-text">
+                <h3>met deze qr-code kun je jou ticket verzilveren bij de kassa</h3>
+                <h3>uitprinten van de qr code mag.<br> medewerkers kunnen vragen om de betaalbevestiging te laten zien<br> om eventuele doorverkoop te voorkomen</h3>
+            </div>
+        </div>
+    </div>
+   
+
+</body>
+</html>
