@@ -1,0 +1,622 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* =============================== General =============================== */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+dl,
+ol,
+ul {
+  margin-bottom: 0;
+}
+
+div.wrapper {
+  width: 67%;
+  margin: 0 auto;
+}
+
+section {
+  margin-top: 50px;
+}
+
+button, a {
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  border: 1px solid #AE1C28;
+  PAdding: 10px;
+}
+
+td {
+  text-align: center;
+}
+
+/* =============================== Text */
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/Inter-Regular.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Metropolis';
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url(../fonts/Metropolis-Bold.woff2) format('woff2');
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: black;
+}
+
+h1 {
+  font-family: 'Metropolis', serif;
+  font-size: 4rem;
+  line-height: 72px;
+}
+
+h2 {
+  font-family: 'Metropolis', serif;
+  font-size: 3rem;
+  line-height: 64px;
+}
+
+h3 {
+  font-family: 'Metropolis', serif;
+  font-size: 2.5rem;
+  line-height: 56px;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+p,
+a {
+  font-family: 'Inter', ui-serif;
+  font-size: 1.125rem;
+  line-height: 36px;
+  text-decoration: none;
+  color: black;
+}
+
+i {
+  color: black;
+  font-size: 2rem;
+}
+
+i:hover {
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+.info {
+  text-align: center;
+}
+
+/* =============================== Header =============================== */
+
+header {
+  background-color: #AE1C28;
+}
+
+header a,
+header h1 {
+  color: white;
+  transition: .2s;
+}
+
+header svg {
+  margin-left: 25px;
+  width: 25px;
+}
+
+header svg:hover path {
+  fill: black;
+}
+
+header path {
+  transition: .2s;
+  fill: white;
+}
+
+header h1:hover,
+nav a:hover {
+  color: black;
+}
+
+ header div,
+ nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   flex-flow: wrap;
+ }
+
+ nav li {
+    padding: 0 20px;
+ }
+
+ form input{
+   padding: 10px 20px;
+   border-radius: 30px;
+   border: 1px solid white;
+ }
+
+ form input[type="text"] {
+    background-color: white;
+    color: black;
+    transition: 0.2s;
+ }
+
+form input[type="submit"] {
+    background-color: #AE1C28;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+form input[type="submit"]:hover {
+  color: black;
+  background-color: white;
+}
+
+/* =============================== Main =============================== */
+
+main {
+  margin-top: 75px;
+}
+
+/* =============================== merk */
+
+.merken {
+  text-align: center;
+}
+
+.merken ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.merken img {
+  object-fit: cover;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  transition: .2s;
+}
+
+.merken img:hover {
+  filter: brightness(50%);
+}
+
+.merken li {
+    width: 30%;
+    margin: 20px;
+    border-radius: 30px;
+    transition: 0.2s;
+    box-shadow: 0 4px 16px 0 rgba(12, 12, 13, 0.2);
+}
+
+.merken a {
+  color: white;
+  text-align: center;
+}
+
+.merken .underline {
+  background-color: #AE1C28;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+/* =============================== account */
+
+.account {
+  text-align: center;
+}
+
+.account form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 300px;
+  margin: 0 auto;
+  margin-top: 20vh;
+  padding: 25px;
+  border: 3px solid #AE1C28;
+  border-radius: 30px;
+}
+
+.account input {
+  border: 1px solid #AE1C28;
+  margin-top: 5px;
+}
+
+.account label {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.account input[type="submit"] {
+  margin-top: 20px;
+}
+
+.account a {
+  color: #AE1C28;
+}
+
+/* =============================== admin */
+
+.admin ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.admin li {
+  max-width: 200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #AE1C28;
+  border-radius: 30px;
+  box-shadow: 0 8px 0 #AE1C28;
+  transition: .1s ease-in-out;
+}
+
+.admin li:hover {
+  box-shadow: none;
+  transform: translateY(8px);
+}
+
+.admin a {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.admin svg {
+  width: 50px;
+}
+
+/* =============================== manage */
+
+.add {
+  border: 2px solid #058b00;
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: #12bc00;
+}
+.edit, .delete {
+  padding: 10px 20px;
+}
+
+.edit {
+  background-color: #d7b600;
+}
+
+.delete {
+  background-color: #d70022;
+  color: white;
+}
+
+.manage input {
+  border: 1px solid #AE1C28;
+}
+
+.manage ul {
+  margin-top: 25px;
+}
+
+.manage ul li {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #AE1C28;
+  border-bottom: none;
+}
+
+.cars li > a {
+  flex-grow: 1;
+  text-align: center;
+}
+
+/* =============================== statistic */
+
+.statistic a {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* =============================== Footer =============================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .visually-hidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * The use of `table` rather than `block` is only necessary if using
+ * `::before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
